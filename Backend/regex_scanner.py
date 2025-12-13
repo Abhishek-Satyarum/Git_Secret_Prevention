@@ -1,8 +1,9 @@
-import re
 import json
+import re
 from pathlib import Path
 
-RULES_PATH = Path(__file__).parent.parent / "rules" / "secret_patterns.json"
+
+RULES_PATH = Path("rules/secret_patterns.json")
 
 
 def load_rules():
@@ -11,17 +12,22 @@ def load_rules():
 
 
 def scan_file(file_path):
-    findings = []
-    rules = load_rules()
+    file_path = Path(file_path)
+
+    if not file_path.exists():
+        return []
 
     try:
-        content = Path(file_path).read_text(errors="ignore")
+        content = file_path.read_text(encoding="utf-8", errors="ignore")
     except Exception:
-        return findings
+        return []
+
+    rules = load_rules()
+    findings = []
 
     for rule in rules:
-        matches = re.findall(rule["pattern"], content)
-        if matches:
+        pattern = re.compile(rule["pattern"])
+        if pattern.search(content):
             findings.append({
                 "file": str(file_path),
                 "rule": rule["name"],
