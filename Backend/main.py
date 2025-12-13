@@ -13,10 +13,12 @@ def get_staged_files():
 
     files = []
     for line in result.stdout.splitlines():
-        if line.endswith((".py", ".js", ".ts", ".java", ".go",
-    ".cpp", ".c", ".cs", ".rb", ".php",
-    ".env", ".yaml", ".yml", ".json",
-    ".sh", ".ps1")):
+        if line.endswith((
+            ".py", ".js", ".ts", ".java", ".go",
+            ".cpp", ".c", ".cs", ".rb", ".php",
+            ".env", ".yaml", ".yml", ".json",
+            ".sh", ".ps1"
+        )):
             files.append(line)
 
     return files
@@ -35,7 +37,7 @@ def main():
         findings = scan_file(file)
         if findings:
             findings_found = True
-            print("\n❌ SECRET DETECTED. COMMIT BLOCKED.\n")
+            print("\n❌ SECRET DETECTED.\n")
             for f in findings:
                 print(f"File     : {f['file']}")
                 print(f"Line     : {f.get('line')}")
@@ -44,8 +46,10 @@ def main():
                 print(f"Code     : {f.get('snippet')}")
                 print("-" * 40)
 
-    if findings_found:
-        sys.exit(1)
+    print("\n🚫 Commit blocked.")
+    print("⚠️  Override using (not recommended): git commit -m \"message\" --no-verify")
+    # print("   git commit -m \"message\" --no-verify\n")
+    sys.exit(1)
 
     print("✅ No secrets found. Commit allowed.")
 
