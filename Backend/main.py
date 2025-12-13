@@ -1,49 +1,36 @@
-import subprocess
 import sys
 from pathlib import Path
 from backend.regex_scanner import scan_file
 
-
-def get_staged_files():
-    result = subprocess.run(
-        ["git", "diff", "--cached", "--name-only"],
-        stdout=subprocess.PIPE,
-        text=True
-    )
-
-    files = []
-    for line in result.stdout.splitlines():
-        if line.endswith(".py"):
-            files.append(line)
-
-    return files
-
+BLOCK_SEVERITIES = {"CRITICAL", "HIGH"}
 
 def main():
-    files = get_staged_files()
-
-    if not files:
-        print("✅ No Python files staged. Commit allowed.")
-        return
-
-    findings_found = False
+    files = sys.argv[1:]
+    should_block = False
 
     for file in files:
-        findings = scan_file(file)
-        if findings:
-            findings_found = True
-            print("\n❌ SECRET DETECTED. COMMIT BLOCKED.\n")
-            for f in findings:
-                print(f"File: {f['file']}")
-                print(f"Rule: {f['rule']}")
-                print(f"Severity: {f['severity']}")
-                print("-" * 40)
+        path = Path(file)
 
-    if findings_found:
-        sys.exit(1)
+        if not path.exists() or path.is_dir():
+            continue
 
-    print("✅ No secrets found. Commit allowed.")
+        findings = scan_file(path)
 
+        for f in findings:
+            print("\n🔐 SECRET DETECTED")
+            print(f"File: {f['file']}")
+            print(f"Rule: {f['rule']}")
+            print(f"Severity: {f['severity']}")
+            print("-" * 40)
+
+            if f["severity"] in BLOCK_SEVERITIES:
+                should_block = True
+
+    if should_block:
+        print("❌ Commit blocked due to high-risk secrets")
+        return 1
+
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
