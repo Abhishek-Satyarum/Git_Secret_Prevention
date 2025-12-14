@@ -11,7 +11,7 @@ It has smart decision making program which blocks and warns the user about the A
 
 - Oftenly, Secrets leaks to public repositories by the developers and they can be exploited within minutes, leading to unauthorized API usage, data breaches, cloud credentials, database passwords and financial loss. Attackers, bots, and automated scanners continuously monitor platforms like GitHub and GitLab for exposed secrets.
 
-- As we know that, Git history is immutable by design: once a secret is pushed, it is stored in every clone and mirror of the repo, backup, and cache, which makes complete removal tedious and error-prone.
+- As we know that, [Git](https://git-scm.com/) history is immutable by design: once a secret is pushed, it is stored in every clone and mirror of the repo, backup, and cache, which makes complete removal tedious and error-prone.
 
 - Tools exist to rewrite history, but they are complex, can break forks or integrations, and still may not guarantee that the secret isn’t archived somewhere; in practice, teams often have to revoke and rotate every exposed credential.
 
