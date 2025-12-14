@@ -11,13 +11,13 @@ CLI for this tool is fantastic mainly because it fits naturally into how Git and
 
 ## 😤 Technologies
 
-**BackEnd**: Python
+**BackEnd**: [Python](https://www.python.org/)
 
 Libraries used are:
 
-- Pathlib
-- PyFiglet
-- re (RegEx)
+- [Pathlib](https://docs.python.org/3/library/pathlib.html)
+- [PyFiglet](https://pypi.org/project/pyfiglet/)
+- [re (RegEx)](https://docs.python.org/3/library/re.html)
 
 
 Also the scanner supports multiple file types by checking staged file extensions using tuple-based matching.
@@ -72,6 +72,10 @@ GSP is lightweighted, fast, developer-friendly, and integrates directly into exi
 - As organisation grows larger, there are more and more repos with confidential contracts, so manual control and code review cannot reliably catch every secret, but automated pre‑commit protection scales linearly without depending on reviewer vigilance.
 
 - Over time, this fosters a secure‑by‑default culture where developers internalize best practices (env vars, secret managers, .gitignore) because the tools repeatedly reinforce the right patterns at the moment they code.
+
+- We deliberately avoid detecting random strings as passwords to prevent false positives. We only flag credentials when they are contextually assigned.
+
+- Also our tool blocks commits when secrets are detected. If a developer intentionally wants to proceed, Git provides a secure override using --no-verify, ensuring accountability.
 
 <br>
 
