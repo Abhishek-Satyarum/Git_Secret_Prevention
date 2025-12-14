@@ -17,6 +17,7 @@ Libraries used are:
 
 - Pathlib
 - PyFiglet
+- re (RegEx)
 
 
 Also the scanner supports multiple file types by checking staged file extensions using tuple-based matching.
@@ -27,7 +28,7 @@ GSP is lightweighted, fast, developer-friendly, and integrates directly into exi
 
 ` Python + Git Hooks + Regex + JSON = Real-time secret leak prevention at commit time `
 
-
+<br>
 
 ## 🤔 Why It Matters?
 
