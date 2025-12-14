@@ -9,7 +9,7 @@ It has smart decision making program which blocks and warns the user about the A
 
 ## 😇 Technologies
 
-BackEnd: Python, Json(For Patterns)
+BackEnd: Python
 
 Libraries used are:
 
