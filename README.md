@@ -62,6 +62,7 @@ Steps Required:
 2. Then type "cd Git_Security"
 3. And lastly "cp hooks/pre-commit .git/hooks/" 
 
+<br>
 
 ## 🎥 Video Proof 
 
