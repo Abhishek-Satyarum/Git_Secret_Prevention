@@ -35,7 +35,7 @@ It has smart decision making program which blocks and warns the user about the A
     <td align="center"><b>Blocker</b></td>
     <td align="center"><b>Successor</b></td>
   <tr>
-    <td><img src="docs/block.jpg" width="500"></td>
+    <td><img src="docs/block.jpg" width="600"></td>
     <td><img src="docs/Success.jpg" width="600"></td>
   </tr>
 </table>   
