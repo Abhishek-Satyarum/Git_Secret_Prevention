@@ -54,7 +54,13 @@ It has smart decision making program which blocks and warns the user about the A
 
 <h1><b>Instruction</b></h1>
 
+This hook can be copied into any Git repository in seconds.
 
+Steps Required:
+
+1. Open VS Code type "git clone https://github.com/Abhishek-Satyarum/Git_Security" in the terminal.
+2. Then type "cd Git_Security"
+3. And lastly "cp hooks/pre-commit .git/hooks/"
 
 
 ## 🎥 Video Proof 
