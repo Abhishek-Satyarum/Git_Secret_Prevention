@@ -35,6 +35,21 @@ Libraries used are:
 
 <br>
 
+<h1><b>👨‍🏫 Instructions</b></h1>
+
+This hook can be copied into any Git repository in seconds in your system.
+
+→ Steps Required:
+
+1. Open [VS Code](https://code.visualstudio.com/) or System Terminal type ```git clone https://github.com/Abhishek-Satyarum/Git_Secret_Prevention```
+2. Then type ```cd Git_Secret_Prevention```
+3. And lastly `cp hooks/pre-commit .git/hooks/`
+4. After task is completed, its time to commit. Type ` git add .`
+5. Then type ` git commit -m "Done" `
+6. Shows if your file have any secrets in it
+
+<br>
+
 <h1><b>🎯 Solution</b></h1>
 
 - Catching secrets before they enter the repository is the only reliable way to ensure they never appear in history, never replicate to other clones, and never reach external scanners.
@@ -74,21 +89,6 @@ Libraries used are:
 - Also our tool blocks commits when secrets are detected. If a developer intentionally wants to proceed, Git provides a secure override using --no-verify, ensuring accountability.
 
 - GSP scans comments as well, because commented secrets are still leaked in Git history.
-
-<br>
-
-<h1><b>👨‍🏫 Instructions</b></h1>
-
-This hook can be copied into any Git repository in seconds in your system.
-
-→ Steps Required:
-
-1. Open [VS Code](https://code.visualstudio.com/) or System Terminal type ```git clone https://github.com/Abhishek-Satyarum/Git_Secret_Prevention```
-2. Then type ```cd Git_Secret_Prevention```
-3. And lastly `cp hooks/pre-commit .git/hooks/`
-4. After task is completed, its time to commit. Type ` git add .`
-5. Then type ` git commit -m "Done" `
-6. Shows if your file have any secrets in it
 
 <br>
 
