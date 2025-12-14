@@ -53,7 +53,7 @@ It has smart decision making program which blocks and warns the user about the A
 
 <br>
 
-## → Benefits Of Using GSP
+## 😁 Benefits Of Using GSP
 
 - It is a secret aware Git workflow that reduces the cognitive load on developers as they dont have to manually remember that "Not to commit this file". This tool enforces it consistently across the team.
 
@@ -67,7 +67,7 @@ It has smart decision making program which blocks and warns the user about the A
 
 This hook can be copied into any Git repository in seconds in your system.
 
-Steps Required:
+→ Steps Required:
 
 1. Open [VS Code](https://code.visualstudio.com/) or System Terminal type ```git clone https://github.com/Abhishek-Satyarum/Git_Security```
 2. Then type ```cd Git_Security```
