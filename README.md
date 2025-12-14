@@ -58,9 +58,9 @@ This hook can be copied into any Git repository in seconds in your system.
 
 Steps Required:
 
-1. Open VS Code type "git clone https://github.com/Abhishek-Satyarum/Git_Security" in the terminal.
+1. Open VS Code or System Terminal type "git clone https://github.com/Abhishek-Satyarum/Git_Security" in the terminal.
 2. Then type "cd Git_Security"
-3. And lastly "cp hooks/pre-commit .git/hooks/"
+3. And lastly "cp hooks/pre-commit .git/hooks/" 
 
 
 ## 🎥 Video Proof 
