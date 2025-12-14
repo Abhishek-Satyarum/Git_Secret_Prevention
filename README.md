@@ -76,7 +76,7 @@ GSP is **lightweighted, fast, developer-friendly, and integrates directly into e
 
 - Also our tool blocks commits when secrets are detected. If a developer intentionally wants to proceed, Git provides a secure override using --no-verify, ensuring accountability.
 
-- 
+- Our tool scans comments as well, because commented secrets are still leaked in Git history.
 
 <br>
 
