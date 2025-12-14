@@ -61,7 +61,7 @@ Libraries used are:
 
 - It is a secret aware Git workflow that reduces the cognitive load on developers as they dont have to manually remember that "Not to commit this file". This tool enforces it consistently across the team.
 
-- As organisation grows larger as more and more repos with confidencial contracts, so manual control and code review cannot reliably catch every secret, but automated pre‑commit protection scales linearly without depending on reviewer vigilance.
+- As organisation grows larger as more and more repos with confidencial contracts are pushed, so manual control and code review cannot reliably catch every secret, but automated pre‑commit protection scales linearly without depending on reviewer vigilance.
 
 - Over time, this fosters a secure‑by‑default culture where developers internalize best practices (env vars, secret managers, .gitignore) because the tools repeatedly reinforce the right patterns at the moment they code.
 
