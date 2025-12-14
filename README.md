@@ -53,7 +53,7 @@ It has smart decision making program which blocks and warns the user about the A
 
 ## Video Proof 
 
-<img src="docs/Video%20Proof%20(2).mp4">
+<video src="docs/Video%20Proof%20(2).mp4">
 
 
 
