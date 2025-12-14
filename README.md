@@ -20,8 +20,6 @@ Libraries used are:
 - [re (RegEx)](https://docs.python.org/3/library/re.html)
 
 
-Also the scanner supports multiple file types by checking staged file extensions using tuple-based matching.
-
 We detect secrets independent of language syntax which means we support any programming language available.
 
 GSP is **lightweighted, fast, developer-friendly, and integrates directly into existing Git workflows** without requiring cloud services or dashboards.
@@ -49,6 +47,8 @@ GSP is **lightweighted, fast, developer-friendly, and integrates directly into e
 - A pre‑commit check becomes a small safety net that runs in milliseconds on the developer’s machine, turning an easy human mistake (copy‑pasting a key during debugging) into a harmless, fixable warning.
 
 - GSP shifts security from reactive firefighting (rotate keys, investigate logs, notify users) to proactive hygiene that quietly protects every commit, every day, with almost no friction.
+
+- Also the scanner supports multiple file types by checking staged file extensions using tuple-based matching.
 
 <br>
 
