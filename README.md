@@ -54,7 +54,7 @@ It has smart decision making program which blocks and warns the user about the A
 ## 🎥 Video Proof 
 
 
-<video src="https://github.com/Abhishek-Satyarum/Git_Secret_Prevention/blob/main/docs/Video%20Proof%20(2).gif" controls title="Video Title" width="600"></video>
+<video src="docs/Video%20Proof%20(2).gif" controls title="Video Title" width="600"></video>
 
 
 
