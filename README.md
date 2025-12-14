@@ -26,7 +26,7 @@ We detect secrets independent of language syntax which means we support any pro
 
 GSP is lightweighted, fast, developer-friendly, and integrates directly into existing Git workflows without requiring cloud services or dashboards.
 
-` Python + Git Hooks + Regex + JSON = Real-time secret leak prevention at commit time `
+IDEA: ` Python + Git Hooks + Regex + JSON = Real-time secret leak prevention at commit time `
 
 <br>
 
