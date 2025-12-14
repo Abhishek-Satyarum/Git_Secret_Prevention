@@ -28,7 +28,9 @@ It has smart decision making program which blocks and warns the user about the A
 
 - GSP shifts security from reactive firefighting (rotate keys, investigate logs, notify users) to proactive hygiene that quietly protects every commit, every day, with almost no friction.
 
-<table><tr><td><img src="docs/block.jpg"></td></tr></table>
+<br>
+
+<table><tr><td><img src="docs/block.jpg" width=400></td></tr></table>
 
 <br>
 
