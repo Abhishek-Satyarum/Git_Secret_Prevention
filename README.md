@@ -50,11 +50,13 @@ It has smart decision making program which blocks and warns the user about the A
 
 - Over time, this fosters a secure‑by‑default culture where developers internalize best practices (env vars, secret managers, .gitignore) because the tools repeatedly reinforce the right patterns at the moment they code.
 
+<br>
 
 ## 🎥 Video Proof 
 
 
 <video src="docs/Video%20Proof%20(2).gif" controls title="Video Title" width="600"></video>
 
-https://github.com/user-attachments/assets/2f62af67-5c1a-4686-b782-169b205a74dd
+"https://github.com/user-attachments/assets/2f62af67-5c1a-4686-b782-169b205a74dd"
 
+<video src="[https://github.com/Abhishek-Satyarum/Git_Secret_Prevention/blob/main/docs/Video%20Proof%20(2).gif]" controls width="100%"></video>
