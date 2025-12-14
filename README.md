@@ -11,7 +11,7 @@ CLI for this tool is fantastic mainly because it fits naturally into how Git and
 
 ## 😤 Technologies
 
-**BackEnd**: [Python](https://www.python.org/)
+**BackEnd**: [Python](https://www.python.org/), Json
 
 Libraries used are:
 
