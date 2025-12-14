@@ -22,7 +22,7 @@ Libraries used are:
 
 ## 🤔 Why It Matters?
 
-- Oftenly, Secrets leaks to public repositories by the developers and they can be exploited within minutes, leading to unauthorized API usage, data breaches, cloud credentials, database passwords and financial loss. Attackers, bots, and automated scanners continuously monitor platforms like [GitHub](https://github.com/) and GitLab for exposed secrets.
+- Oftenly, Secrets are leaked to public repositories by the developers and they can be exploited within minutes, leading to unauthorized API usage, data breaches, cloud credentials, database passwords and financial loss. Attackers, bots, and automated scanners continuously monitor platforms like [GitHub](https://github.com/) and GitLab for exposed secrets.
 
 - As we know that, [Git](https://git-scm.com/) history is immutable by design: once a secret is pushed, it is stored in every clone and mirror of the repo, backup, and cache, which makes complete removal tedious and error-prone.
 
