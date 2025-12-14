@@ -100,7 +100,7 @@ This hook can be copied into any Git repository in seconds in your system.
 
 
 
-<h1 align="center"><b>***********Thank You***********</b></h1>
+<h1 align="center"><b>Thank You</b></h1>
 
 
 
