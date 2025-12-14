@@ -86,6 +86,9 @@ This hook can be copied into any Git repository in seconds in your system.
 1. Open [VS Code](https://code.visualstudio.com/) or System Terminal type ```git clone https://github.com/Abhishek-Satyarum/Git_Secret_Prevention```
 2. Then type ```cd Git_Secret_Prevention```
 3. And lastly `cp hooks/pre-commit .git/hooks/`
+4. After task is completed, its time to commit. Type ` git add .`
+5. Then type ` git commit -m "Done" `
+6. Shows if your file have any secrets in it
 
 <br>
 
