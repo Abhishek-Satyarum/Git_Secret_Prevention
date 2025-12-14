@@ -52,7 +52,7 @@ It has smart decision making program which blocks and warns the user about the A
 
 <br>
 
-<h1><b>Instruction</b></h1>
+<h1><b>👨‍🏫 Instructions</b></h1>
 
 This hook can be copied into any Git repository in seconds in your system.
 
