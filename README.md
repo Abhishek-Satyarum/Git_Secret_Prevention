@@ -34,8 +34,13 @@ Libraries used are:
 - [re (RegEx)](https://docs.python.org/3/library/re.html)
 
 **IDEA**: ` Python + Git Hooks + Regex + JSON = Real-time secret leak prevention at commit time `
-
-<img src="docs/GSP.png" width="400">
+<table>
+  <tr>
+    <td>
+      <img src="docs/GSP.png" width="400">
+    </td>
+  </tr>
+</table>
 
 
 <br>
