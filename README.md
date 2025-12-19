@@ -7,6 +7,18 @@ It has smart decision making program which blocks and warns the user about the A
 
 CLI for this tool is fantastic mainly because it fits naturally into how Git and developers already work, while staying fast, simple, and secure. Also it uses Standard Library Modules which are built into Python and available without extra installation. 
 
+Types of Secret Patterns it can detect are:
+1. AWS Access Key
+2. Stripe Secret Key
+3. Generic Passwords of Personal Drives ect
+4. Firebase API Key
+5. GitHub Token
+6. JWT Token
+7. Private Database URLs
+8. Twilio API Key
+9. SendGrid API Key
+10. Hardcoded Passwords
+
 <br>
 
 ## 😤 Technologies
